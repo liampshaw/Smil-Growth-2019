@@ -14,3 +14,15 @@ The analysis can be run using `scripts/run-fits.R`. Fits are performed with the 
 
 N.B. asymmetrical logistic not yet fitted.
 
+Scripts can be run with
+
+```
+Rscript scripts/run-fits.R
+```
+
+The Latex output can then be made with:
+
+```
+python scripts/makeLatex.py > main.tex
+```
+
