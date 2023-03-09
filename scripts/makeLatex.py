@@ -1,4 +1,5 @@
 import csv
+import os
 
 
 with open("scripts/latex-header.tex", "r") as f:
@@ -11,12 +12,14 @@ with open("data/datasets.csv", "r") as f:
                      quoting=csv.QUOTE_ALL, skipinitialspace=True)):
 		if i!=0:
 			if split_line[1]!="yes":
-				print("\\begin{figure}[h]")
-				print("\includegraphics[width=8cm]{output/figs-ggplot/"+split_line[0]+".pdf}")
-				caption = split_line[12]
-				print("\caption{\\textbf{Dataset "+split_line[0]+"}: "+caption+"}")
-				print("\end{figure}")
-				print("	")
+				# if figure exists:
+				if os.path.exists("output/figs-ggplot/"+split_line[0]+".pdf"):
+					print("\\begin{figure}[h]")
+					print("\includegraphics[width=8cm]{output/figs-ggplot/"+split_line[0]+".pdf}")
+					caption = split_line[12]
+					print("\caption{\\textbf{Dataset "+split_line[0]+"}: "+caption+"}")
+					print("\end{figure}")
+					print("	")
 
 
 print("\end{document}")
