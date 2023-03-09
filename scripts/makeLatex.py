@@ -3,9 +3,9 @@ import re
 
 
 with open("scripts/latex-header.tex", "r") as f:
-	for line in enumerate(f.readlines()):
-		print(line)
-		
+	for line in f.readlines():
+		print(line.strip("\n"))
+
 with open("data/datasets.csv", "r") as f:
 	for i, line in enumerate(f.readlines()):
 		if i!=0:
