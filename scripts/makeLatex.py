@@ -14,6 +14,7 @@ with open("data/datasets.csv", "r") as f:
 			if split_line[1]!="yes":
 				# if figure exists:
 				if os.path.exists("output/figs-ggplot/"+split_line[0]+".pdf"):
+					print("\clearpage")
 					print("\\begin{figure}[h]")
 					print("\includegraphics[width=0.5\\textwidth]{output/figs-ggplot/"+split_line[0]+".pdf}")
 					caption = split_line[12]
