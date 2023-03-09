@@ -3,6 +3,7 @@
 # Author: Liam Shaw (2023)
 library(ggplot2)
 
+set.seed(20230309)
 source('scripts/functions.R')
 
 # Read in parameter names (effectively a dictionary file with info on each figure/dataset)
