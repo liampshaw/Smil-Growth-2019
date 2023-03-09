@@ -18,7 +18,7 @@ with open("data/datasets.csv", "r") as f:
 					print("\\begin{figure}[h]")
 					print("\includegraphics[width=\\textwidth]{output/figs-ggplot/"+split_line[0]+".pdf}")
 					caption = split_line[12]
-					print("\caption{\\textbf{Dataset "+split_line[0]+"}: "+caption+"}")
+					print("\caption*{\\textbf{Dataset "+split_line[0]+"} (p. "+split_line[10]+")."+caption+"}")
 					print("\end{figure}")
 					print("	")
 
