@@ -4,6 +4,26 @@ DATASETS.DF = read.csv('data/datasets.csv', header=T, colClasses = c(rep("charac
                                                                      rep("character", 4)))
 
 # Investigate special cases one-by-one
+dataset = "4.28"
+output_prefix = "4.28"
+df = read.csv(paste0('data/', dataset, '.csv'), header=T)
+MODEL = DATASETS.DF[DATASETS.DF$Dataset==dataset, "Model"]
+
+# Model is logistic
+model = nls(y~SSfpl(x, A, B, xmid, scal),
+            df,
+            control=list(maxiter=100),
+            start=list(A=0, B=900,xmid=2020, scal=1.5))
+x.limits = c(DATASETS.DF[DATASETS.DF$Dataset==dataset, "xmin"],
+             DATASETS.DF[DATASETS.DF$Dataset==dataset, "xmax"])
+y.limits = c(DATASETS.DF[DATASETS.DF$Dataset==dataset, "ymin"],
+             DATASETS.DF[DATASETS.DF$Dataset==dataset, "ymax"])
+x.predictions = seq(x.limits[1], x.limits[2], (x.limits[2]-x.limits[1])/100)
+y.predictions = predict(model,newdata = data.frame(x=x.predictions))
+
+df.predict = data.frame(x=x.predictions, 
+                        y=y.predictions)
+# 5.5
 dataset = "5.5"
 output_prefix = "5.5"
 df = read.csv(paste0('data/', dataset, '.csv'), header=T)
