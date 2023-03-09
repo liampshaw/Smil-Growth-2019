@@ -16,7 +16,7 @@ with open("data/datasets.csv", "r") as f:
 				if os.path.exists("output/figs-ggplot/"+split_line[0]+".pdf"):
 					print("\clearpage")
 					print("\\begin{figure}[h]")
-					print("\includegraphics[width=0.5\\textwidth]{output/figs-ggplot/"+split_line[0]+".pdf}")
+					print("\includegraphics[width=\\textwidth]{output/figs-ggplot/"+split_line[0]+".pdf}")
 					caption = split_line[12]
 					print("\caption{\\textbf{Dataset "+split_line[0]+"}: "+caption+"}")
 					print("\end{figure}")
