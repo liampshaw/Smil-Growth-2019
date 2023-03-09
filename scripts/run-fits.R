@@ -33,14 +33,14 @@ for (dataset in DATASETS.DF$Dataset[DATASETS.DF$Parent.figure!="yes"]){
 # see scripts/special-cases.R
 
 # 5.5
-modelDataset("5.5",
+p.5.5 = modelDataset("5.5",
              output_prefix="5.5", 
              starting_parameter_estimates = list(A=0, 
                                                  B=40, 
                                                  xmid=2100, 
                                                  scal=50))
 # 5.29.4
-modelDataset("5.29.4",
+p.5.29.4 = modelDataset("5.29.4",
              output_prefix="5.29.4", 
              starting_parameter_estimates = list(A=0,
                                                  B=100000,
@@ -48,7 +48,7 @@ modelDataset("5.29.4",
                                                  scal=10))
 
 # 5.30.3
-modelDataset("5.30.3",
+p.5.30.3 = modelDataset("5.30.3",
              output_prefix="5.30.3", 
              starting_parameter_estimates =list(A=0,
                                                 B=20,
