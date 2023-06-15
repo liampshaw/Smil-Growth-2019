@@ -31,7 +31,8 @@ Rscript scripts/run-fits.R
 The pdf output can then be made with:
 
 ```
-python scripts/makeLatex.py > results.tex
+python scripts/makeLatex.py > latex/results.tex
+xelatex latex/results.tex
 ```
 
 The results of the fits are then in 
@@ -39,7 +40,7 @@ The results of the fits are then in
 
 ## Warning 
 
-**Disclaimer**: this reanalysis is my own work. The results will not exactly reproduce the figures or values in Smil (2009). In particular, I  am aware of the following issues with some of the fits:
+**Disclaimer**: this reanalysis is my own work. The results will not exactly reproduce the figures or values in Smil (2019). In particular, I  am aware of the following issues with some of the fits:
 
 * 1.17.2 - no fit available. I am not aware of an easy off-the-shelf way to fit an asymmetrical logistic in R (not a model I have ever used    and not aware of an implementation). I attempted to fit my own specification of model but it was very slow and didn't seem to be converging.
 * 4.13 - the fit fails completely. I think since here I am fitting a logistic but should probably try exponential.
