@@ -22,5 +22,9 @@ with open("data/datasets.csv", "r") as f:
 					print("\end{figure}")
 					print("	")
 
+with open("latex/references.tex", "r") as f:
+	for line in f.readlines():
+		print(line.strip("\n"))
+
 
 print("\end{document}")
