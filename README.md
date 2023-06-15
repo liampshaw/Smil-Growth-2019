@@ -1,10 +1,10 @@
 
-<h1>Datasets from *Growth* (2019)</h1>	
+<h1>Datasets from <i>Growth</i> (2019)</h1>	
 
 
 This repository contains data and code for 80 datasets featured in [*Growth: from microorganisms to megacities*](https://mitpress.mit.edu/9780262539685/growth/) (2019) by Vaclav Smil. 
 
-*Growth* contains a wealth of time-series data collected from diverse sources. Smil fits simple models, most notably the [logistic function](https://en.wikipedia.org/wiki/Logistic_function), to demonstrate how widely applicable they are: from the growth of bacteria to the expansion of rail networks.  
+*Growth* contains a wealth of time-series data collected from diverse sources. Smil fits simple models, most notably the [logistic function](https://en.wikipedia.org/wiki/Logistic_function), to demonstrate how widely applicable they are: from the growth of bacteria to the growth of rail networks.  
 
 This archive intends to make these datasets available for wider use in statistics teaching. Whatever your interest, there is probably a dataset in here for you!  
 
