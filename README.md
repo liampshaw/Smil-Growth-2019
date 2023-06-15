@@ -18,7 +18,7 @@ The datasets in `data` are named according to their figure labels in the book it
 
 ### Output
 
-The raw data points and the fitted models are all included in `fits.pdf` together with the legends as in the original book. This is intended to help with choosing a dataset to reuse.  
+The raw data points and the fitted models are all included in `results.pdf` together with the legends as in the original book. This is intended to help with choosing a dataset to reuse. References for all datasets are provided as in the original book. 
 
 ### Reproducing the results
 
@@ -36,10 +36,10 @@ The pdf output can then be made with:
 
 ```
 python scripts/makeLatex.py > latex/results.tex
-xelatex latex/results.tex
+xelatex latex/results.tex 
 ```
 
-The results of the fits are then in 
+The results of the fits are then in `results.pdf` in this repository.  
 
 
 ## Warning 
@@ -51,3 +51,11 @@ The results of the fits are then in
 * 4.19 - Smil fits logistic but I fit an exponential since the process seems in such early stages of growth, but the fit looks bad.
 * 4.28 - ditto the above.
 * 5.11 - the logistic fit looks very poor.
+
+## Citation
+
+The overall citation for the source of the datasets is this repository and Smil's original publication:
+
+Smil, Vaclav. *Growth: from microorganisms to megacities.* MIT Press, 2019.
+
+If reusing a particular dataset, please consult `results.pdf` to obtain the appropriate citation.  
