@@ -1,6 +1,7 @@
 
 <h1>Datasets from <i>Growth</i> (2019)</h1>	
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8043245.svg)](https://doi.org/10.5281/zenodo.8043245)
 
 This repository contains data and code for 80 datasets featured in [*Growth: from microorganisms to megacities*](https://mitpress.mit.edu/9780262539685/growth/) (2019) by Vaclav Smil. 
 
