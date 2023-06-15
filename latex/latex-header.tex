@@ -1,0 +1,49 @@
+\documentclass[aps,rmp,preprint,superscriptaddress,10pt,onecolumn]{article}
+\usepackage[utf8x]{inputenc}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+\usepackage{enumerate}
+\usepackage{color}
+\usepackage{caption}
+\usepackage[final]{hyperref}
+\usepackage{fontspec}
+%\usepackage{natbib}
+%\bibliographystyle{plainnat}
+
+
+\setmainfont{Times New Roman}
+% \usepackage{unicode-math}
+% \setmathfont{XITS Math}
+
+
+%\setlength{\parindent}{20pt}
+\def\thesubsectiondis{\unskip\arabic{subsection}}
+ 
+\begin{document}
+
+\title{Data summary:\\\textit{Growth: From Microorganisms to Megacities}, Vaclav Smil (2019)}
+\author{Liam P. Shaw}
+\date{\today}
+
+
+\maketitle
+
+\section*{Summary}
+
+\noindent This document contains graphs fitted from a variety of datasets in \textit{Growth} by Vaclav Smil (2019). Code and data to reproduce analysis are available at \url{https://github.com/liampshaw/Smil-Growth-2019}. Figure captions and page numbers are taken from the printed version of the book, first edition.
+
+\par Thanks to Vaclav Smil for sharing these datasets to make this reanalysis possible. 
+
+\par \textbf{Warning:} this reanalysis is my own work. The results will not exactly reproduce the figures or values in Smil (2019). In particular, I  am aware of the following issues with some of the fits:
+
+\begin{itemize}
+\item 1.17.2 - no fit available. I am not aware of an easy off-the-shelf way to fit an asymmetrical logistic in R (not a model I have ever used    and not aware of an implementation). I attempted to fit my own specification of model but it was very slow and didn't seem to be converging.
+\item 4.13 - the fit fails completely. I think since here I am fitting a logistic but should probably try exponential.
+\item 4.19 - Smil fits logistic but I fit an exponential since the process seems in such early stages of growth, but the fit looks bad.
+\item 4.28 - ditto the above.
+\item 5.11 - the logistic fit looks very poor.
+\end{itemize}
+
+
+
+

@@ -31,7 +31,7 @@ Rscript scripts/run-fits.R
 The pdf output can then be made with:
 
 ```
-python scripts/makeLatex.py > main.tex
+python scripts/makeLatex.py > results.tex
 ```
 
 The results of the fits are then in 

@@ -2,7 +2,7 @@ import csv
 import os
 
 
-with open("scripts/latex-header.tex", "r") as f:
+with open("latex/latex-header.tex", "r") as f:
 	for line in f.readlines():
 		print(line.strip("\n"))
 

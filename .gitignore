@@ -2,4 +2,6 @@ spreadsheets/*
 .DS_Store
 .Rhistory
 Notes.md
-
+results.out
+results.log
+results.aux
